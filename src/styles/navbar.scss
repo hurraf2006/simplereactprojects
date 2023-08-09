@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header {
+    background-color: #16add3;
+}
+.Navbar a{
+    color: white;
+    text-decoration: none;
+}
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.modalMenu {
+    z-index: 999;
+    transition: 0.5s;
+    width: 300px;
+    background-color: #394547;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;    
+    padding: 30px;
+}
+.menuList {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.menuList a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    
+}
+.activeModal{
+    left: 0 !important;
+    transition: 0.5s;
+}
+.modalNav {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 1000000px) {
+   .Navbar {
+    display: flex;
+   }
+   .modalNav {
+    display: none;
+   }
+}
+@media (max-width: 580px) {
+    .Navbar {
+        display: none;
+    }
+    .modalNav {
+        display: flex;
+    }
+
+       
+}

@@ -1,0 +1,35 @@
+.homeBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.Home {
+    margin: 200px auto;
+    width: 100%;
+    max-width: 1200px;
+} 
+.leftHome {
+    width: 50%;
+}
+
+
+@media (max-width: 935px) {
+    .Home {
+        margin-top: 70px;
+    }
+    
+    .homeBox{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .leftHome {
+        width: 80%;            
+    }
+}
+@media (max-width: 400px) {
+    .rightHome img{
+        width: 100% !important;
+    }
+}
